@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="ssvd-pkg-JY-WZ", # Replace with your own username
-    version="0.0.1",
+    version="0.0.2",
     author="Ziang Wang & Jishen Yin",
     author_email="jishen.yin@duke.edu",
     description="A package for sparse singular value decomposition",
