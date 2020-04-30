@@ -79,6 +79,9 @@ def ssvd_new(X, gamma_1 = 2, gamma_2 = 2, tol=1e-10, iters=10000):
     return u_new, v_new, u_new.T @ X @ v_new
 
 def ssvd_approx(X, layer=1):
+    """
+    Given the number of layers, return the fitted matrix using sparse SVD algorithm as well as the F-distance in each step.
+    """
     residual = X
     X_fit = np.zeros(X.shape)
     f_dist = []
